@@ -128,14 +128,17 @@ var j = Math.round(Math.random() * 28);
 var k = Math.round(Math.random() * 28);
 var l = Math.round(Math.random() * 28);
 var m = Math.round(Math.random() * 100);
-state.innerHTML=staticGK[i].state; 
-option1.innerHTML=staticGK[i].capital;
-option2.innerHTML=staticGK[j].capital;
-option3.innerHTML=staticGK[k].capital;
-option4.innerHTML=staticGK[l].capital;
+
 
 if(i==j||i==k ||i==l || j==k || j==l || k==l){
     randomise();
+    answer.innerHTML="";
+}else{
+    state.innerHTML=staticGK[i].state; 
+    option1.innerHTML=staticGK[i].capital;
+    option2.innerHTML=staticGK[j].capital;
+    option3.innerHTML=staticGK[k].capital;
+    option4.innerHTML=staticGK[l].capital;
 }
 option1.style.order=m;
 answer.innerHTML="";
