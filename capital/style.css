@@ -110,6 +110,7 @@ body {
 #order{
     display:flex;
     justify-content:space-around;
+    width: 1000px;
   }
   
   #option2{

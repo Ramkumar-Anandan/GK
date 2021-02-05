@@ -123,10 +123,10 @@ var staticGK=[
 
 function randomise() {
   
-var i = Math.round(Math.random() * 28);
-var j = Math.round(Math.random() * 28);
-var k = Math.round(Math.random() * 28);
-var l = Math.round(Math.random() * 28);
+var i = Math.round(Math.random() * 27);
+var j = Math.round(Math.random() * 27);
+var k = Math.round(Math.random() * 27);
+var l = Math.round(Math.random() * 27);
 var m = Math.round(Math.random() * 100);
 
 

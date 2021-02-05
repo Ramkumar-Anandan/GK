@@ -124,9 +124,9 @@ var staticGK=[
 var i=0;
 function randomise(){
   console.log(i);
-    var j = Math.round(Math.random() * 28);
-    var k = Math.round(Math.random() * 28);
-    var l = Math.round(Math.random() * 28);
+    var j = Math.round(Math.random() * 27);
+    var k = Math.round(Math.random() * 27);
+    var l = Math.round(Math.random() * 27);
     
     if(i==j||i==k ||i==l || j==k || j==l || k==l || j==0 || k==0 ||l==0){
       answer.innerHTML="";
@@ -145,24 +145,32 @@ answer.innerHTML="";
 }
   option1.onclick=()=>{
   score++;
-  i++;
-  randomise();
-  resetTime(timerId)
+  if(i==27){
+    answer.style.display="block";
+    answer.innerHTML="You have mastered all the State Capitals, Awesome 🤩"
+  }else{
+    i++;
+    randomise();
+    resetTime(timerId)
+  }
 }
 
 option2.onclick=()=>{
   answer.innerHTML="Sorry 😅 the answer is" +" "+ staticGK[i].capital;
   button.style.display="block";
+  time=3;
 }
 
 option3.onclick=()=>{
   answer.innerHTML="Sorry 😅 the answer is" +" "+ staticGK[i].capital;
   button.style.display="block";
+  time=3;
 }
 
 option4.onclick=()=>{
   answer.innerHTML="Sorry 😅 the answer is" +" " + staticGK[i].capital;
   button.style.display="block";
+  time=3;
 }
 
 button.onclick=()=>{
