@@ -1,5 +1,11 @@
-const play = document.getElementById("play-button")
+const playRandom = document.getElementById("play-random")
 
-play.onclick = () => {
-    location.href = "./game.html"
+playRandom.onclick = () => {
+    location.href = "./capital/index.html"
+}
+
+const playOrder = document.getElementById("play-order")
+
+playOrder.onclick = () => {
+    location.href = "./capital order/index.html"
 }
