@@ -186,19 +186,16 @@ answer.innerHTML="";
 option2.onclick=()=>{
   answer.innerHTML="Sorry 😅 the answer is" +" "+ staticGK[i].governor;
   button.style.display="block";
-  time=3;
 }
 
 option3.onclick=()=>{
   answer.innerHTML="Sorry 😅 the answer is" +" "+ staticGK[i].governor;
   button.style.display="block";
-  time=3;
 }
 
 option4.onclick=()=>{
   answer.innerHTML="Sorry 😅 the answer is" +" " + staticGK[i].governor;
   button.style.display="block";
-  time=3;
 }
 
 button.onclick=()=>{
